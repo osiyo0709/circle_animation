@@ -1,0 +1,59 @@
+body{
+    background: linear-gradient(#0315a1, #f504cd,#fa0303);
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.text{
+    color: #fff;
+}
+.image{
+    display: block;
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    cursor: pointer;
+    background: url(photo_2024-02-09_21-53-46.jpg) no-repeat 100% 50%;
+    background-size: 120%;
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+}
+.image:hover{
+    box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+    background-position: 0% 50%;
+}
+.image:hover .text{
+    transform: rotate(-45deg) translate(0px) rotate(-315deg);
+    background: rgba(112, 16, 207, 0.5);
+    width: 20rem;
+    letter-spacing: 1rem;
+    line-height: 20rem;
+    height: 20rem;
+    margin-top: -10rem;
+    margin-left: -10rem;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1),
+    letter-spacing 1.5s ease-out;
+}
+.image .text{
+    display: block;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -5rem;
+    margin-left: -5rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(20, 16, 16);
+    text-align: center;
+    border-radius: 50%;
+    background: #23329e;
+    transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1,);
+}
